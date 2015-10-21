@@ -1,6 +1,6 @@
 # simple-form-validator
 #This is a simple Jquery class for validating a html form before submitting.
-#To use this library you would need:
+To use this library you would need:
 1. Jquery library
 2. Html form with name and id attributes provided
 3. For each required field and class required ie class="required"
