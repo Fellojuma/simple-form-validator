@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Validate</title>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="newvalidate.js"  type="text/javascript"></script>
+</head>
+<body>
+<div id="validation-error"></div>
+	<form id="validate" action ="" method="post" >
+	<table width="500px">
+		<tr><td>First Name:</td><td><input type="text" name="firstname" class="required"/></td><td><span id="error_firstname"></span></td></tr>
+		<tr><td>Last Name:</td><td><input type="text" name="lastname" class="required "/></td><td><span id="error_lastname"></span></td></tr>
+		<tr><td>Gender :</td><td><select name="gender" class="required"><option value=""></option><option value="Male">Male</option><option value="Female">Female</option><option value="Other">Other</option></select>
+		</td><td><span id="error_gender"></span></td></tr>
+		<tr><td>Email:</td><td><input type="text" name="myemail" class="required email"/></td><td><span id="error_myemail"></span></td></tr>
+		<tr><td>Password:</td><td><input type="password" name="password" class="required confirmpassword "/></td><td><span id="error_password"></span></td></tr>
+		<tr><td>Confirm Password:</td><td><input type="password" name="confirmpassword" class="required equals "/></td><td><span id="error_confirmpassword"></span></td></tr>
+		<tr><td>Insitution</td><td><input type="text" name="insituion" class=""/></td><td><span id="error_insituion"></span></td></tr>
+	</table>
+<button>Submit</button>
+	</form>
+</body>
+</html>
+<script>
+$("#validate").submit(function(){
+	return $(this).validate_html_form();
+});
+</script>
