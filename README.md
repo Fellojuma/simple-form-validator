@@ -8,6 +8,6 @@ To use this library you would need:
 5. Then add a submit button. 
 6. And the following code at the end.
 $("#validate").submit(function(){
-	return $(this).validate_html_form();
+	return $(this).simple_form_validator();
 });
 
