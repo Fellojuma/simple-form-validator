@@ -1,4 +1,4 @@
-$.fn.validate_html_form = function() {
+$.fn.simple_form_validator = function() {
     
 	var theform = $(this).attr('id');
 	var returnval=0;
