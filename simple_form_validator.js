@@ -1,3 +1,7 @@
+/*
+Author: Felix Juma
+Phone: +254 720 108 418
+*/
 $.fn.simple_form_validator = function() {
     
 	var theform = $(this).attr('id');
